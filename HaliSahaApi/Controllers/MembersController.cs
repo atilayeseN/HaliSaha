@@ -96,9 +96,9 @@ namespace HaliSahaApi.Controllers
             return NoContent();
         }
 
-        private bool MembersExists(Members member)
+        private bool MembersExists(long id)
         {
-            return _context.MemberItems.Any(e => e.ID == member.ID);
+            return _context.MemberItems.Any(e => e.ID == id);
         }
 
        
