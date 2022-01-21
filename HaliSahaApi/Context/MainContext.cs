@@ -11,6 +11,6 @@ namespace HaliSahaApi.Context
         public DbSet<Members> MemberItems => Set<Members>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseNpgsql("Host=halisaha.postgres.database.azure.com;Database=halisaha;Username=atilay@halisaha;Password=1698_yakosayko");
+        => options.UseNpgsql("Host=localhost;Database=halisaha;Username=postgres;Password=1234");
     }
 }
